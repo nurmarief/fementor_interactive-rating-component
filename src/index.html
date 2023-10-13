@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="review-page-main-content">
+        <h1 hidden>Our Service's Review</h1>
+        <div class="review-card card">
+          <section
+            class="review-card__section review-card__section_type_review-section"
+          >
+            <img
+              class="review-card__star-img"
+              src="./images/icon-star.svg"
+              alt=""
+            />
+            <h2 class="card__title">How did we do?</h2>
+            <p class="review-card__text card__text">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+            <form
+              class="review-form form"
+              method="POST"
+            >
+              <div class="form__field">
+                <div class="form__radio-group">
+                  <div class="radio-input">
+                    <label
+                      class="radio-input__label"
+                      for="oneRating"
+                      >1</label
+                    >
+                    <input
+                      class="radio-input__input"
+                      type="radio"
+                      id="oneRating"
+                      name="rating"
+                      value="1"
+                      required
+                    />
+                  </div>
+                  <div class="radio-input">
+                    <label
+                      class="radio-input__label"
+                      for="twoRating"
+                      >2</label
+                    >
+                    <input
+                      class="radio-input__input"
+                      type="radio"
+                      id="twoRating"
+                      name="rating"
+                      value="2"
+                    />
+                  </div>
+                  <div class="radio-input">
+                    <label
+                      class="radio-input__label"
+                      for="threeRating"
+                      >3</label
+                    >
+                    <input
+                      class="radio-input__input"
+                      type="radio"
+                      id="threeRating"
+                      name="rating"
+                      value="3"
+                    />
+                  </div>
+                  <div class="radio-input">
+                    <label
+                      class="radio-input__label"
+                      for="fourRating"
+                      >4</label
+                    >
+                    <input
+                      class="radio-input__input"
+                      type="radio"
+                      id="fourRating"
+                      name="rating"
+                      value="4"
+                    />
+                  </div>
+                  <div class="radio-input">
+                    <label
+                      class="radio-input__label"
+                      for="fiveRating"
+                      >5</label
+                    >
+                    <input
+                      class="radio-input__input"
+                      type="radio"
+                      id="fiveRating"
+                      name="rating"
+                      value="5"
+                    />
+                  </div>
+                </div>
+                <p class="form__error-msg form__error-msg_is-hidden">
+                  Whooops! It looks like you forgot to pick the rating
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="button review-form__submit-button"
+              >
+                Submit
+              </button>
+            </form>
+          </section>
+          <section
+            class="review-card__section review-card__section_type_thanks-section review-card__section_is-hidden"
+          >
+            <img
+              class="card__img"
+              src="./images/illustration-thank-you.svg"
+              alt=""
+            />
+            <p class="review-card__show-user-feedback"></p>
+            <h2 class="card__title">Thank you!</h2>
+            <p class="review-card__text card__text">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don&lsquo;t hesitate to get in touch!
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
