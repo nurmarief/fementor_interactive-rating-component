@@ -1,0 +1,15 @@
+.review-form {
+  padding-inline: 0;
+}
+
+.review-form__submit-button {
+  display: block;
+  border-radius: 99999rem;
+  width: 100%;
+  background-color: var(--orange);
+
+  &:hover {
+    color: var(--orange);
+    background-color: var(--white);
+  }
+}

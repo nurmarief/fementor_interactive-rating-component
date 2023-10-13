@@ -1,0 +1,27 @@
+.radio-input {
+  display: inline-block;
+  &:has(.radio-input__input[type='radio']:checked) .radio-input__label {
+    background-color: var(--light-grey);
+  }
+}
+
+.radio-input__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.5rem;
+  max-width: 2.5rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--dark-blue);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--orange);
+  }
+}
+
+.radio-input__input {
+  display: none;
+}

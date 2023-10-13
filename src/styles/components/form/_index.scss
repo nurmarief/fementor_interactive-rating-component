@@ -1,0 +1,27 @@
+.form {
+  display: block;
+  margin-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.form__field {
+  display: block;
+  margin-block: 1rem;
+}
+
+.form__radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1rem;
+  flex-wrap: wrap;
+}
+
+.form__error-msg {
+  font-size: clamp(0.8rem, calc(0.9vw + 0.1rem), 1rem);
+  color: var(--red);
+  margin-block: 1rem;
+}
+
+.form__error-msg_is-hidden {
+  display: none;
+}

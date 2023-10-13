@@ -1,0 +1,9 @@
+// base-level
+@forward './review-page-main-content/';
+@forward './form/';
+@forward './button/';
+@forward './radio-input/';
+@forward './card/';
+// base-level descendant
+@forward './review-card/';
+@forward './review-form/';
